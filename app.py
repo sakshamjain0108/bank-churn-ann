@@ -7,7 +7,7 @@ import joblib
 app = Flask(__name__)
 
 # Load the "brain" and "translators" we saved earlier
-model = tf.keras.models.load_model('churn_model.h5')
+model = tf.keras.models.load_model('churn_model.keras')
 le = joblib.load('label_encoder.pkl')
 ct = joblib.load('column_transformer.pkl')
 sc = joblib.load('scaler.pkl')
